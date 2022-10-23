@@ -1,0 +1,24 @@
+//-------------------------------------------------
+// Required Files
+//-------------------------------------------------
+Code::Blocks 16.01
+https://www.codeblocks.org/downloads/binaries/older/
+
+DynRPG SDK					
+https://github.com/CherryDT/DynRPG
+https://rpg-maker.cherrytree.at/dynrpg
+https://github.com/rewrking/DynRPG
+
+Compilation of the plugins requires the SDK header files and a lib file ( libDynRPG.a) 
+Cherry released DynRPG in versions up to 0.20, which means the newest headers als libfiles  by cherry is V0.20.
+PepsiOtaku added to it by creating headers V0.30 that work with the 0.20 lib.
+My plugins use PepsiOtakus V0.30 headers and cherrys V0.20 lib.
+
+//-------------------------------------------------
+// Setup CodeBlocks
+//-------------------------------------------------
+Code::Blocks -> Settings -> Compiler
+
+SearchDirectories -> Compiler -> Add folder '\DynRPG V0.30_PepsiOtaku\DynRPG' einfügen
+Compiler Settings -> Other Compiler Options -> add setting '-fno-omit-frame-pointer'
+Linker            -> Linklibraries include link to lib file '...DynRPG\V0.20\sdk\lib\libDynRPG.a'
