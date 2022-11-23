@@ -1,4 +1,4 @@
-This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
+# This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
 
 This repository contains:
 * The Plugins:		As a DLL file, in PluginName\TestProject\DynPlugins\ 
