@@ -1,31 +1,31 @@
-# This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
-
+# Welcome
+This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
 * Some of the projects are well maintained and still used by developers
-* Some of the projects were created for single devs a decade ago and never touched again.
+* Some of the projects were created for a single dev a decade ago and never touched again.
 * Some of the documentation is in english.
 * Some of the documentation is in german
+* All plugins are compiled for DynRPG V0.2 with the PepsiOtaku V0.3 SDK 
 
-
-CortiCustomCrit
-CortiCombatVisu
-CortiBattleBlend
-CortiAtbSpeed
-CortiMonsterHud
-
-CortiThreating
-CortiEventTrace
-CortiLogs
-CortiSkillTracking
-CortiItemProperties
-CortiMath
-CortiSkillOverload
-CortiAnalysis
-CortiControls
-CortiItemSkillHealing
-CortiWeaponProperties
+|PLUGIN|NOTE|README|
+| ------ | ------ |------ |
+|CortiCustomCrit| Maintained |EN
+|CortiCombatVisu| Maintained | GER
+|CortiBattleBlend| Maintained | EN
+|CortiAtbSpeed| Well used back in 2015 |GER
+|CortiMonsterHud| Well used back in 2015 |GER
+|CortiEventTrace| - | GER |
+|CortiLogs| - | GER |
+|CortiItemProperties| - | EN |
+|CortiSkillTracking| Legacy code | GER |
+|CortiMath| Legacy code | GER |
+|CortiSkillOverload| Legacy code | GER |
+|CortiAnalysis| Legacy code | EN / GER |
+|CortiItemSkillHealing| Legacy code | GER |
+|CortiWeaponProperties| Legacy code | GER |
+|CortiThreating| Legacy code | GER |
+|CortiControls| Weird wish by one guy | GER |
 
 # LICENSE
-
 You are ALLOWED
 * to use the plugins in your game
 * use the code to learn from it and use the code as part of your plugins
