@@ -1,0 +1,40 @@
+CortiEventTrace DynRPG PlugIn V0.2
+
+ ========== Author: ==========
+Corti 16.02.2015
+
+ ========== Versionen: ==========
+(V0.1) 16.02.2015 - Beginn des Projektes
+(V0.1) 23.02.2015 - Aufsplittung des Projektes in CortiLogs und CortiEventTrace. Die Event-Trace-Funktion hat eher Debugging-Natur und sollte zum Release nicht mitveröffentlicht werden. CortiLogs hingegen taugt als Fehlerdiagnose- und Feedbackinstrument.
+
+ ========== Funktionen: ==========
+* EventTrace : Komplette Eventverarbeitung kann mitgeloggt werden.
+* EventTrace : Entweder bei Spielstart aktiviert oder loggt nur, solange ein Switch ON ist.
+
+Die Dateien sind im Unterverzeichnis "CortiEventTrace" zu finden und haben den Namen "CortiEventTrace_DATUM.txt".
+
+ ========== Anwendung: ==========
+Das Plugin kann nützlich sein, um zu schauen, ob etwas an EventCode passiert, oder um nachzuvollziehen, welcher Befehl einen Absturz des Spieles auslöst. Das Plugin richtet sich an Entwickler, die eines dieser speziellen Probleme angehen wollen.
+
+Die gespeicherten Zeilen enthalten den Befehl, verfügbare Informationen über EventId, Seite und Zeile, sowie die vom Befehl verwendeten Parameter. In diesen Parametern sind alle Einstellungsmöglichkeiten der Makerbefehle kodiert. In einer Welt in der ich für diese Arbeit bezahlt werde, würde ich diese Parameter dekodieren und für euch in einfach lesbare Zeilen wandeln. Der Einsatzbereich dieses Plugins ist aber derart gering, dass der Aufwand dies bei allen Befehlen zu tun die Sache nicht wert ist.
+Solltest DU ganz speziell ein Problem mit zB MovePicture haben, dann frag mich direkt deswegen und ich baue für MovePicture eine lesbarere Variante ein.
+
+2015.02.21-15:44:31 [TRACE] File created.
+2015.02.21-15:44:33 [Event] Evcmd[CALL_SHOP] EventId[9] PageId[1] lineId[0]  IntPar[16] 0, 0, 0, 0, 1, 2, 7, 21, 18, 21, 35, 0,
+
+ ========== Konfiguration: ==========
+Die Konfiguration kann in der DynRPG.ini im Absatz [CortiEventTrace] konfiguriert werden.
+
+Es gibt zwei Betriebsarten.
+
+>>> Dauerbetrieb:
+Dabei wird alles mitgeschrieben. Das ist im Regelfall unnötig und frisst Leistung. Sollte aber ein Fehler direkt beim Spielstart auftreten bevor man selbst etwas im Spiel tun kann, dann kann diese Betriebsart helfen.
+
+>>> An- und Ausschalten per Switch:
+Es werden nur Eventbefehle geschrieben, solange ein Switch ON ist. Der Entwickler kann den Switch einfach über den DebugModus F9 setzen und zurücksetzen. Für Entwickler kann es Sinn machen, das Plugin so konfiguriert im Projekt zu haben, um für den Fall, dass komiche Effekte auftreten spontan mitschreiben zu können, was dort passiert.
+
+[CortiEventTrace]
+; Dauerbetrieb ist deaktiviert. 0 = Aus, 1 = An
+RunAlways=0
+; Switch mit der ID 2 schaltet das Tracing ein. 0 = Funktion nicht aktiv.
+RunSwitchId=2

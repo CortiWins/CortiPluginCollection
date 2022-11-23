@@ -1,10 +1,30 @@
 This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
 
-This repository contains:
-* The Plugins:		As a DLL file, in PluginName\TestProject\DynPlugins\ 
-* Documentation:	As a TXT file, as PluginName\Source\PluginNameReadme.txt
-* The Sourcecode
-* A Test Project
+* Some of the projects are well maintained and still used by developers
+* Some of the projects were created for single devs a decade ago and never touched again.
+* Some of the documentation is in english.
+* Some of the documentation is in german
+
+
+CortiCustomCrit
+CortiCombatVisu
+CortiBattleBlend
+CortiAtbSpeed
+CortiMonsterHud
+
+CortiThreating
+CortiEventTrace
+CortiLogs
+CortiSkillTracking
+CortiItemProperties
+CortiMath
+CortiSkillOverload
+CortiAnalysis
+CortiControls
+CortiItemSkillHealing
+CortiWeaponProperties
+
+# LICENSE
 
 You are ALLOWED
 * to use the plugins in your game
