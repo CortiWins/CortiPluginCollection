@@ -1,0 +1,36 @@
+// Zu setzende Einstellungen für Versionsanzeige in Windows Dateieigenschaften.
+#define VER_FILENAME               "CortiItemProperties.dll"
+#define VER_COPYRIGHT           "Corti, 2015"
+#define VER_VERSION                 0,5,0,0
+#define VER_VERSION_STR         "0.5.0.0"
+
+// Keine notwendigen Änderungen ab hier:
+#include <winver.h>
+
+VS_VERSION_INFO     VERSIONINFO
+FILEVERSION               VER_VERSION
+PRODUCTVERSION     VER_VERSION
+FILEFLAGSMASK          VS_FFI_FILEFLAGSMASK
+FILEFLAGS                   0
+FILEOS                         VOS__WINDOWS32
+FILETYPE                      VFT_DLL
+FILESUBTYPE               0   // not used
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "FileDescription",  VER_FILENAME
+      VALUE "FileVersion",      VER_VERSION_STR
+      VALUE "InternalName",     VER_FILENAME
+      VALUE "LegalCopyright",   VER_COPYRIGHT
+      VALUE "OriginalFilename", VER_FILENAME
+      VALUE "ProductName",      VER_FILENAME
+      VALUE "ProductVersion",   VER_VERSION_STR
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 1252
+  END
+END
