@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="../CortiXCustomCrit" prefix_auto="1" extension_auto="1" />
+				<Option output="../TestProject/DynPlugins/CortiXCustomCrit" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -26,9 +26,6 @@
 					<Add option="-s" />
 					<Add library="user32" />
 				</Linker>
-				<ExtraCommands>
-					<Add after='cmd /c COPY &quot;M:\Projekte\DarkSword\DarkSword\Quellcode\CortiXCustomCrit.dll&quot; &quot;M:\Projekte\Github2k3\CortiCustomCrit\TestProject\DynPlugins\CortiXCustomCrit.dll&quot;' />
-				</ExtraCommands>
 			</Target>
 		</Build>
 		<Unit filename="Calculations/Calculations.cpp">
@@ -137,6 +134,36 @@
 		<Unit filename="CustomCrit.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+		</Unit>
+		<Unit filename="DebugTools/ConsoleLogger.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DebugTools/ConsoleLoggerHeader.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DebugTools/CortiLog.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DebugTools/DebugFile.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DebugTools/lodepng.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DebugTools/lodepngHeader.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="Ressource.rc">
 			<Option compilerVar="WINDRES" />

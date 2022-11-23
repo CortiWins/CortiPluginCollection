@@ -17,8 +17,8 @@
 #include <stdio.h>
 #define null NULL
 #include "Common/Dialog.cpp"
-#include "../AwesomeInnocentiaPlugin/DebugTools/ConsoleLogger.cpp"
-#include "../AwesomeInnocentiaPlugin/DebugTools/CortiLog.cpp"
+#include "DebugTools/ConsoleLogger.cpp"
+#include "DebugTools/CortiLog.cpp"
 #include "CustomCrit.cpp"
 
 // DynRPG Callbacks
