@@ -1,4 +1,4 @@
-This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
+# This is going to be a collection of all RPG Maker 2003 DynRPG Plugins i created, replacing the separate repositories.
 
 * Some of the projects are well maintained and still used by developers
 * Some of the projects were created for single devs a decade ago and never touched again.
