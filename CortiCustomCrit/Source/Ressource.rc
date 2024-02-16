@@ -1,8 +1,8 @@
 // Zu setzende Einstellungen für Versionsanzeige in Windows Dateieigenschaften.
 #define PLUGIN_NAME        "CortiXCustomCrit.dll"
-#define PLUGIN_VERSION      0,9,1,0
-#define PLUGIN_VERSION_TXT "0.9.1.0"
-#define PLUGIN_COPYRIGHT   "(C) 2013 - 2022 github.com/CortiWins"
+#define PLUGIN_VERSION      0,9,2,0
+#define PLUGIN_VERSION_TXT "0.9.2.0"
+#define PLUGIN_COPYRIGHT   "(C) 2013 - 2024 github.com/CortiWins"
 #define PLUGIN_COMMENTS    "https://github.com/CortiWins/CortiPluginCollection"
 
 #include <winver.h>

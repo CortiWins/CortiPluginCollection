@@ -1,5 +1,5 @@
 CortiCustomCrit DynRPG PlugIn V0.9.0
-	by Corti ( 2013-2022 )
+	by Corti ( 2013-2024 )
 	for unofficial RPG Maker 2003 with DynRPG v0.20 or higher
 
 https://github.com/CortiWins/CortiPluginCollection
@@ -26,6 +26,7 @@ https://github.com/CortiWins/CortiPluginCollection
 (V0.9.1) [22.11.2022] A whole bunch of documentation typos and small errors. Thx Boulon@RMN.net Added section 'Technical Limitations'.
 (V0.9.1) [23.11.2022] VisualEffect.CustomAnimation: Fixed two bugs. One with cel offset in y and magnification was missing as well.
 (V0.9.1) [23.11.2022] VisualEffect: added parameter for a delay by frames before the Crit!-Icons or Animation is shown.
+(V0.9.2) [16.02.2024] Fixed possible NullReference Exception after leaving combat.
 
 *******************************************************************
 *                     Todo

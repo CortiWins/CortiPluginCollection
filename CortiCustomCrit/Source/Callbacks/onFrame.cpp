@@ -7,7 +7,7 @@ RPG::Scene currentScene =  RPG::SCENE_DEBUG;
 void onFrame ( RPG::Scene scene )
 {
     // Framecounter is less than before, means game has been reset
-    if((RPG::system->frameCounter)<currentFrameCounter)
+    if ( ( RPG::system->frameCounter ) < currentFrameCounter )
     {
         CustomCrit::OnResetGame();
     }
@@ -15,17 +15,17 @@ void onFrame ( RPG::Scene scene )
     // Scene change
     if ( scene != currentScene )
     {
-        if(scene == RPG::SCENE_BATTLE && currentScene != RPG::SCENE_DEBUG)
+        if ( scene == RPG::SCENE_BATTLE && ( currentScene != RPG::SCENE_DEBUG && currentScene != RPG::SCENE_OGL_OPTIONS ) )
         {
             // Player has entered a battle.
             CustomCrit::OnSceneChange();
         }
-        else if(scene != RPG::SCENE_DEBUG && currentScene == RPG::SCENE_BATTLE)
+        else if ( ( scene != RPG::SCENE_DEBUG && scene != RPG::SCENE_OGL_OPTIONS ) && currentScene == RPG::SCENE_BATTLE )
         {
             // Player has left a battle.
             CustomCrit::OnSceneChange();
         }
-        else if(scene == RPG::SCENE_TITLE)
+        else if ( scene == RPG::SCENE_TITLE )
         {
             CustomCrit::OnResetGame();
         }

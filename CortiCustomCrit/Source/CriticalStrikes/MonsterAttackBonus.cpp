@@ -52,8 +52,15 @@ void ResetCritBonus(int monsterPartyIndex)
 {
     if(monsterAtkValues[monsterPartyIndex] > 0)
     {
-        RPG::Monster *monPtr = RPG::monsters[monsterPartyIndex];
-        monPtr->attackDiff -= monsterAtkValues[monsterPartyIndex];
+        if(RPG::system->scene == RPG::SCENE_BATTLE)
+        {
+            RPG::Monster *monPtr = RPG::monsters[monsterPartyIndex];
+            if(monPtr != null)
+            {
+                monPtr->attackDiff -= monsterAtkValues[monsterPartyIndex];
+            }
+        }
+
         monsterAtkValues[monsterPartyIndex] = 0;
         LOGINFO("MonsterIndex " << monsterPartyIndex << " Reset ATK Bonus");
     }
